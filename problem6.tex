@@ -1,0 +1,29 @@
+\section{Problem VI}
+\begin{enumerate}[label=(\alph*)]
+	\item \textbf{solution:}\\
+	The capacity of a cut is defined to be the sum of the capacities of the edges crossing it. Since the number of such edges is at most $\mid E \mid$, and the capacity of each edge is at most $C$, the capacity of any cut of $G$ is at most $C\mid E \mid$.
+
+	\item \textbf{solution:}\\
+	The capacity of an augmenting path is the minimum capacity of any edge on the path, so we are looking for an augmenting path whose edges all have capacity at least $K$ . Do a breadth-first search or depth-first-search as usual to find the path, considering only edges with residual capacity at least $K$ . (Treat lower-capacity edges as though they don't exist.) This search takes $O(V + E) = O(E)$ time since in flow network we have $\mid V \mid = O(E)$
+
+	\item \textbf{solution:}\\
+	Max-Flow-By-Scaling uses the Ford-Fulkerson method. It repeatedly augments the flow along an augmenting path until there are no augmenting paths of capacity greater than 1. Since all the capacities are integers, and the capacity of an augmenting path is positive, this means that there are no augmenting paths in the residual graph at the end of the algorithm. Thus, by the max-flow min-cut theorem, Max-Flow-By-Scaling returns a maximum flow.
+
+	\item \textbf{solution:}\\
+	The first time line 4 is executed, the capacity of any edge in $G_f$ equals its capacity in $G$, and by part (a) the capacity of a minimum cut of $G$ is at most $C\mid E \mid$. Initially $K = 2\lfloor lgC \rfloor$, hence $2K = 2 \cdot 2^{\lfloor lgC \rfloor} = 2^{\lfloor lgC \rfloor + 1} > 2^{lgC} = C$. So the capacity of a minimum cut of $G_f$ is initially less than $2K \mid E \mid$.\\
+
+	The other times line 4 is executed, $K$ has just been halved, so the capacity of a cut of $G_f$ is at most $2K \mid E \mid$ at line 4 if and only if that capacity was at most $K \mid E \mid$ when the while loop of lines 5-6 last terminated. So we want to show that when line 7 is reached, the capacity of a minimum cut of $G_f$ is most $K \mid E \mid$.\\
+
+	Let $G_f$ be the residual network when line 7 is reached.\\
+	There is no augmenting path of capacity $\geq K$ in $G_f$\\
+	$\Rightarrow$ max flow $f'$ in $G_f$ has value $\mid f' \mid < K \mid E \mid$\\
+	$\Rightarrow$ min cut in $G_f$ has capacity $< K \mid E \mid$ 
+
+	\item \textbf{solution:}\\
+	By part (d), when line 4 is reached, the capacity of a minimum cut of $G_f$ is at most $2K \mid E \mid$, and thus the maximum flow in $G_f$ is at most $2K \mid E \mid$.\\
+
+	By an extension of Lemma 26.2, the value of the maximum flow in $G$ equals the value of the current flow in $G$ plus the value of the maximum flow in $G_f$ . Therefore, the maximum flow in $G$ is at most $2K \mid E \mid$ more than the current flow in $G$. Every time the inner while loop finds an augmenting path of capacity at least $K$ , the flow in $G$ increases by $\geq K$ . Since the flow cannot increase by more than $2K \mid E \mid$, the loop executes at most $(2K \mid E \mid)/K = 2 \mid E \mid$ times.
+
+	\item \textbf{solution:}\\
+	The time complexity is dominated by the loop of lines 4-7. The outer while loop executes $O(lgC)$ times, since $K$ is initially $O(C)$ and is halved on each iteration, until $K < 1$. By part (e), the inner while loop executes $O(E)$ times for each value of $K$; and by part (b), each iteration takes $O(E)$ time. Thus, the total time is $O(E^2 lg C)$.
+\end{enumerate}

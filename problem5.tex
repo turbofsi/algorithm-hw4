@@ -1,0 +1,5 @@
+\section{Problem V}
+\textbf{solution}:\\
+To prove sufficiency in the directed case, let $(G, u, s, t)$ be a network with unit capacities $u = 1$ such that $t$ is reachable rfrom $s$ even after deleting any $k - 1$ edges. This implies that the minimum capacity of an $s-t$ cut is at least $k$. By the Max-Flow-Min-Cut Theorem this flow can be decomposed into integral flows on $s-t$ paths. Since all capacities are 1 we must have at least $k$ edge-dijoint $s-t$ paths. \\
+
+To prove sufficiency in the undirected case, let $G$ be an undirected graph with two vertives $s$ and $t$ such that $t$ is reachable from $s$ even after deleting any $k - 1$ edges. This property obiously remains true if we replace each undirected edge $e = \left\{ v, w \right\}$  by five directed edges $(v, x_e), (w, x_e), (x_e, y_e), (y_e, v), (y_e, w)$ where $x_e$ and $y_e$ are new vertives. Now we have a digraph $G'$ and, by the first part, $k$ edge-disjoint $s-t$ paths in $G'$. These can be easily transformed to $k$ edge-disjoint $s-t$ pahts in $G$. 

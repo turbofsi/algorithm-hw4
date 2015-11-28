@@ -1,0 +1,13 @@
+\section{Problem III}
+\textbf{solution}:\\
+Suppose $d_j$ is the first edge that violate $c_i \leq d_i$ which means $c_j > d_j$. Since $d_1 \leq d_2 \leq \dots \leq d_j$ then we have $d_1 \leq d_2 \leq \dots \leq d_j < c_j$. \\
+
+There are two conditions at this point:
+\begin{enumerate}
+  \item $c_i = d_i$ for all $i < j$
+  \item There is at least one pair of edge have $c_m \neq d_m$ 
+\end{enumerate}
+
+For the first condition, we have $c_i = d_i$ for all $i < j$. Because $c_j > d_j$, which implies that we once considered $d_j$ before $c_j$ but $d_j$ will form a cycle during Kruskal algorithm. However, since $c_i = d_i$ for all $i < j$, $d_j$ will also form a cycle in the arbitrary spanning tree $\Rightarrow$ a contradiction.\\
+
+For the second condition, we assume that $c_m \neq d_m$, $m < j$ and $c_j > d_m$. This means that we have also once considered $d_m$ but $d_m$ will form a cycle during Kruskal algorithm so we choose $c_m$ instead. Which implies that $c_m > d_m$, so, $d_m$ is the first edge that violate $c_j \leq d_j$. But $d_j$ is the first edge that violate $c_i \leq d_i$ $\Rightarrow$ a contradiction. 

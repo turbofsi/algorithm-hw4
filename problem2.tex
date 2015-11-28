@@ -1,0 +1,18 @@
+\section{Problem II}
+\textbf{solution}:\\
+To get find a path from $s$ to $v$ that has minimum bottleneck-length among all paths from $s$ to $v$, we could use the idea of Dijkstra algorithm and change its relaxation function. We define $d[v], v \in V$ as the bottleneck-length of vertex $v$. If d[v] > max{d[u], w(u, v)}, $(u, v) \in E$, we update d[v] = max{d[u], w(u, v)}. We also define $\pi[v]$ as the parent node of each $v \in V$. At the end of the algorithm, we can get the minimum bottleneck-length among all paths from $s$ to $v$. The pseudo-code is as follows:\\
+
+$d[s] \gets -\infty
+$\\
+$S \gets \Phi$\\
+\textbf{for} each $v \in V - \left\{ s \right\}$:\\
+ \hspace*{0.6cm} \textbf{do} $d[v] \gets \infty$\\
+ $Q \gets V$\\
+ \textbf{while} $Q \neq \Phi$\\
+ \hspace*{0.6cm} $u \gets Extract\_min(Q)$\\
+ \hspace*{0.6cm} \textbf{for} each $v \in adj[u]$:\\
+ \hspace*{0.6cm} \hspace*{0.6cm} \textbf{do} if d[v] > max\{d[u], w(u, v)\}\\
+\hspace*{0.6cm} \hspace*{0.6cm} \hspace*{0.6cm} d[v] $\gets$ max\{d[u], w(u, v)\}\\
+\hspace*{0.6cm} \hspace*{0.6cm} \hspace*{0.6cm} $\pi[v] \gets u$\\
+
+Similar with Dijkstra algorithm, we can achieve a running time of $O(VlogV + E)$ by implementing the min-priority queue with a Fibonacci heap. The amortized cost of each of the Extract-Min operations if $O(logV)$ and there are $\mid V \mid$ such operations. Meanwhile, each Decrease-Key call, of which there are at most $\mid E \mid$, takes only $O(1)$ amortized time. 
