@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 NOV 2015 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 NOV 2015 01:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,8 +754,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-) (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/problem6.tex [
-4]
+[4]) (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/problem6.te
+x
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
@@ -770,28 +770,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-) [5] (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/hw4.aux) )
- 
+[5]) [6] (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/hw4.aux
+) ) 
 Here is how much of TeX's memory you used:
- 9487 strings out of 493089
- 147276 string characters out of 6134842
+ 9490 strings out of 493089
+ 147316 string characters out of 6134842
  373556 words of memory out of 5000000
- 12752 multiletter control sequences out of 15000+600000
- 98690 words of font info for 121 fonts, out of 8000000 for 9000
+ 12753 multiletter control sequences out of 15000+600000
+ 102807 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,10n,54p,819b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/adobe/utopia/putri8a.pfb>
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
 Output written on /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder
-/hw4.pdf (5 pages, 144136 bytes).
+/hw4.pdf (6 pages, 145830 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
