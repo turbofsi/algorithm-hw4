@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 NOV 2015 01:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 NOV 2015 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,8 +754,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[4]) (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/problem6.te
-x
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+
+ []
+
+<hw4p5b.png, id=23, 747.79375pt x 75.28125pt>
+File: hw4p5b.png Graphic file (type png)
+<use hw4p5b.png>
+Package pdftex.def Info: hw4p5b.png used on input line 18.
+(pdftex.def)             Requested size: 299.1122pt x 30.11195pt.
+[4 </Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/hw4p5b.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+
+ []
+
+<hw4p5a.png, id=28, 697.60625pt x 248.93pt>
+File: hw4p5a.png Graphic file (type png)
+<use hw4p5a.png>
+Package pdftex.def Info: hw4p5a.png used on input line 31.
+(pdftex.def)             Requested size: 279.03755pt x 99.57022pt.
+
+Overfull \hbox (8.1929pt too wide) in paragraph at lines 28--36
+\T1/futs/m/n/10.95 each undi-rected edge $\FML/futmi/m/it/10.95 e \FMS/futm/m/n
+/10.95 Å []$ \T1/futs/m/n/10.95 by five di-rected edges $(\FML/futmi/m/it/10.95
+ v; x[]\T1/futs/m/n/10.95 )\FML/futmi/m/it/10.95 ; \T1/futs/m/n/10.95 (\FML/fut
+mi/m/it/10.95 w; x[]\T1/futs/m/n/10.95 )\FML/futmi/m/it/10.95 ; \T1/futs/m/n/10
+.95 (\FML/futmi/m/it/10.95 x[]; y[]\T1/futs/m/n/10.95 )\FML/futmi/m/it/10.95 ; 
+\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 y[]; v\T1/futs/m/n/10.95 )\FML/futmi/
+m/it/10.95 ; \T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 y[]; w\T1/futs/m/n/10.95
+ )$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
+
+ []
+
+<hw4p5c.png, id=29, 997.7275pt x 252.945pt>
+File: hw4p5c.png Graphic file (type png)
+<use hw4p5c.png>
+Package pdftex.def Info: hw4p5c.png used on input line 44.
+(pdftex.def)             Requested size: 399.08392pt x 101.17621pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 </Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/hw4p5a.png>])
+(/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/problem6.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
@@ -765,33 +815,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-
+[6 </Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/hw4p5c.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-[5]) [6] (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/hw4.aux
-) ) 
+) [7] (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder/hw4.aux) )
+ 
 Here is how much of TeX's memory you used:
- 9490 strings out of 493089
- 147316 string characters out of 6134842
- 373556 words of memory out of 5000000
- 12753 multiletter control sequences out of 15000+600000
+ 9508 strings out of 493089
+ 147550 string characters out of 6134842
+ 373586 words of memory out of 5000000
+ 12768 multiletter control sequences out of 15000+600000
  102807 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,10n,54p,819b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/adobe/utopia/putri8a.pfb>
 Output written on /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw4-folder
-/hw4.pdf (6 pages, 145830 bytes).
+/hw4.pdf (7 pages, 232422 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
