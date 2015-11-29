@@ -1,6 +1,6 @@
 \section{Problem IV}
 \textbf{solution}:\\
-We could use the idea of Kruskal's algorithm. At the begining of the algorithm we could treat each node $v \in V$ as a cluster so that we have $\mid V \mid$ cluster at begining. The algorithm runs as follows:\\
+We could use the idea of Kruskal's algorithm. At the beginning of the algorithm we could treat each node $v \in V$ as a cluster so that we have $\mid V \mid$ cluster at beginning. The algorithm runs as follows:\\
 
 $A \gets \Phi$\\
 \textbf{for} each $v \in V[G]$\\
@@ -14,11 +14,11 @@ $i \gets \mid V \mid - k$\\
 \hspace*{0.6cm} \hspace*{0.6cm} \hspace*{0.6cm} Union($u$, $v$)\\
 \hspace*{0.6cm} $i \gets i - 1$\\
 
-We start from the lightest edge, each time we take an edge in nondecreasing order by weight whose two endpoints belongs to different cluster. Thus, we merge two clusters each time. If we take this operation $\mid V \mid - k$ times, we will have $k$ clusters eventually. We now claim that after $\mid V \mid - k$ rounds, our algorithm gurantees that the minimum distance between any pairs in two different resulting clusters is maximized. We can prove it as follows:\\
+We start from the lightest edge, each time we take an edge in nondecreasing order by weight whose two endpoints belongs to different cluster. Thus, we merge two clusters each time. If we take this operation $\mid V \mid - k$ times, we will have $k$ clusters eventually. We now claim that after $\mid V \mid - k$ rounds, our algorithm guarantees that the minimum distance between any pairs in two different resulting clusters is maximized. We can prove it as follows:\\
 
-When $k = 1$, the algorithm above is actually the Kruskal's algorithm which we will get a MST. We will use this MST in the following proof. We can delete the $k - 1$ most expensive edges from the MST. The spacing $d$ of the clustering $C$ that this produces is the length of the $(k - 1)^{st}$ most expensive edge. Let $C'$ be a different clustering. We'll show that $C'$ must have the same or smaller seperation than $C$. Since $C \neq C'$, there must be some pair $p_i, p_j$ that are in the same cluster in $C$ but different clusters in $C'$. \\
+When $k = 1$, the algorithm above is actually the Kruskal's algorithm which we will get a MST. We will use this MST in the following proof. We can delete the $k - 1$ most expensive edges from the MST. The spacing $d$ of the clustering $C$ that this produces is the length of the $(k - 1)^{st}$ most expensive edge. Let $C'$ be a different clustering. We'll show that $C'$ must have the same or smaller separation than $C$. Since $C \neq C'$, there must be some pair $p_i, p_j$ that are in the same cluster in $C$ but different clusters in $C'$. \\
 
-Together in $C$ $\Rightarrow$ Path $P$ between $p_i, p_j$ with all edges $\leq d$. Some edge of $P$ passes between two different cluster of $C'$. Therefore, $d$ is the maximized minmum distance. \\
+Together in $C$ $\Rightarrow$ Path $P$ between $p_i, p_j$ with all edges $\leq d$. Some edge of $P$ passes between two different cluster of $C'$. Therefore, $d$ is the maximized minimum distance. \\
 
 The running time of this algorithm is $O(ElogV)$.
 

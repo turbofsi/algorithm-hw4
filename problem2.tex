@@ -1,6 +1,6 @@
 \section{Problem II}
 \textbf{solution}:\\
-To get find a path from $s$ to $v$ that has minimum bottleneck-length among all paths from $s$ to $v$, we could use the idea of Dijkstra algorithm and change its relaxation function. We define $d[v], v \in V$ as the bottleneck-length of vertex $v$. If d[v] > max{d[u], w(u, v)}, $(u, v) \in E$, we update d[v] = max{d[u], w(u, v)}. We also define $\pi[v]$ as the parent node of each $v \in V$. At the end of the algorithm, we can get the minimum bottleneck-length among all paths from $s$ to $v$. The pseudo-code is as follows:\\
+To find a path from $s$ to $v$ that has minimum bottleneck-length among all paths from $s$ to $v$, we could use the idea of Dijkstra algorithm and change its relaxation function. We define $d[v], v \in V$ as the bottleneck-length of vertex $v$. If d[v] > max{d[u], w(u, v)}, $(u, v) \in E$, we update d[v] = max{d[u], w(u, v)}. We also define $\pi[v]$ as the parent node of each $v \in V$. At the end of the algorithm, we can get the minimum bottleneck-length among all paths from $s$ to $v$. The pseudo-code is as follows:\\
 
 $d[s] \gets -\infty
 $\\
